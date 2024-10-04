@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'ChaletNewYorkNineteenEighty'; 
+    src: url('fonts/ChaletNewYorkNineteenEighty.otf') format('opentype'); 
+}
+body{
+    font-family: 'ChaletNewYorkNineteenEighty',sans-serif;
+}
+
+/* for setting the background */
+.outer-container{
+    background-color: #81be41;
+    height: 100vh;
+}
+
+/* To postion the content within a specific area in the container */
+.content-container{
+    padding: 4px 90px;    
+}
+
+.first-row{
+    text-align: right;
+    padding: 9px;
+}
+.first-row a{
+    font-family: 'ChaletNewYorkNineteenEighty',sans-serif;
+    display: inline-flex;
+    color: #ffff;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+/* navbar css begins */
+.navbar{
+    display: flex;
+    background-color: #ffff;
+    height: 15vh;
+    align-items: center;
+    
+}
+
+.logo img{
+    height: 8vh;
+    padding: 2px 12px;
+}
+
+.navbar-actions{
+    padding-left: 20px;
+    padding-right: 100px;
+    display: flex;
+    gap: 18px;
+}
+.navbar-actions a{
+    color: #f16078;
+    font-size: 18px;
+}
+
+.navbar-button a{
+    text-decoration: none;
+    background-color: #f16078;
+    color: #ffff;
+    width: 20px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 12px;
+    margin: 15px;
+}
+
+.right-button{
+    margin: 15px;
+    text-align: center;
+}
+
+.row1{
+    color: #81be41;
+}
+
+.row2 input{
+    border: none;
+    background-color: #DBDADA;
+    margin-right: 0px;
+    padding:3px 4px;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.row2 input::placeholder{
+    color: #000;
+}
+
+/* to remove the gap between the input field and button */
+.row2{
+    display: flex;
+}
+
+.row2 button{
+    border: none;
+    background-color: #f16078;
+    color: #ffff;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-size: medium;
+}
