@@ -3,23 +3,33 @@
     src: url('fonts/ChaletNewYorkNineteenEighty.otf') format('opentype'); 
 }
 body{
+    margin-top: 0px;
     font-family: 'ChaletNewYorkNineteenEighty',sans-serif;
 }
 
 /* for setting the background */
 .outer-container{
+    margin-top: -55px;
+    margin-bottom: -10px;
     background-color: #81be41;
-    height: 100vh;
+    height: 100%vh;
 }
 
 /* To postion the content within a specific area in the container */
 .content-container{
-    padding: 4px 90px;    
+    padding: 0px 90px;
+      
 }
 
 .first-row{
+    background-color: #81be41;
     text-align: right;
-    padding: 9px;
+    padding: 0px 30px;
+    right: 85px;
+    margin: 0px 0px;
+    position: fixed;
+    width: 180vh;
+    height: 40px;
 }
 .first-row a{
     font-family: 'ChaletNewYorkNineteenEighty',sans-serif;
@@ -32,42 +42,62 @@ body{
 
 /* navbar css begins */
 .navbar{
+    /* margin-top: 40px; */
+    padding: 5px 0px 0px 15px;
+    margin:34px 30px 0px 0px;
     display: flex;
     background-color: #ffff;
-    height: 15vh;
+    height: 12vh;
     align-items: center;
+    position: fixed;
     
 }
 
 .logo img{
-    height: 8vh;
+    max-height: 8vh;
     padding: 2px 12px;
 }
 
 .navbar-actions{
-    padding-left: 20px;
-    padding-right: 100px;
+    padding-left: 8px;
+    padding-right: 35px;
     display: flex;
-    gap: 18px;
+    gap: 0.7rem;
 }
 .navbar-actions a{
+    max-width: 10rem;
     color: #f16078;
-    font-size: 18px;
+    font-size: 1.1vw;
+    box-sizing: border-box;
+    display: inline-block; 
+    border: 2px solid transparent; /* Invisible border initially */
+    border-radius: 12px; /* Ensure the shape is the same with or without hover */
+    background-color: transparent; /* No background initially */
+    padding: 8px;
 }
-
+.navbar-actions a:hover{
+    border: 2px solid #E42545;
+    border-radius: 12px;
+    background-color: #ededed;
+    padding: 8px;
+    
+}
+.navbar-button{
+    max-width: 150px;
+    margin: 10px;
+}
 .navbar-button a{
     text-decoration: none;
     background-color: #f16078;
     color: #ffff;
-    width: 20px;
-    padding: 8px 12px;
+    padding: 0.5rem 1rem;
     border: none;
-    border-radius: 12px;
-    margin: 15px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
 }
 
 .right-button{
-    margin: 15px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -100,4 +130,127 @@ body{
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     font-size: medium;
+}
+
+.image-container{
+    margin-top: 54px;
+    width: 100%;
+    height: auto;
+}
+.image-container img{
+    margin-top: 124px;
+    width: 100%;
+    object-fit:cover;
+}
+
+/* css for 3 cards */
+.card-container{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+    margin-top: -4px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card-container a{
+    margin: 30px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.card-container a p{
+   background-color: #81be41;
+   color: #fff;
+   padding: 10px 0px;
+   border-bottom-left-radius: 14px;
+   border-bottom-right-radius: 14px;
+   margin-top: 0px;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.card-img{
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    display: block;
+    width: 20vw;
+    width: 100%;
+}
+/* end of css for the cards  */ 
+/* design-element section */
+.design-container{
+    background-color:white;
+    padding-bottom: 40px;
+   
+}
+
+.design-element{
+    display: grid;
+    grid-template-columns: repeat(23, 1fr); 
+    background-image: url('./assets/circle-pattern.png');
+    background-repeat: repeat;
+    height: 16vh;
+}
+
+/* footer section  */
+.footer{
+    background-color: #f16078;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    
+}
+.footer-positions{
+    margin-top: 50px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 30px;
+}
+
+.icons a img{
+    width: 1.5vw;
+}
+
+.footer-buttons, .text{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.copyright{
+    font-size: 11px;
+    font-family: serif;
+    color: #A32F42;
+    margin-top: 25px;
+}
+
+.footer-buttons>.footer-positions:hover,.text>.footer-positions:hover{
+    color: #E42545;
+}
+
+.human{
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    /* z-index: 1; */
+}
+
+.human img{
+    width: 90px;
+}
+.bottom-left{
+    position: fixed;
+    bottom: 20px; 
+    left: 20px; 
+    /* z-index: 1; */
+}
+
+.bottom-left img{
+    width: 70px;
 }
