@@ -43,7 +43,7 @@ body{
 /* navbar css begins */
 .navbar{
     /* margin-top: 40px; */
-    padding: 5px 0px 0px 15px;
+    padding: 5px 24px 0px 15px;
     margin:34px 30px 0px 0px;
     display: flex;
     background-color: #ffff;
